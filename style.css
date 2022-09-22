@@ -1,24 +1,72 @@
+/*
+# Exercício 1
+Centralizar `header` e o bloco 
+que contém o corpo do texto. 
+
+**NO ENTANTO**, o corpo do texto não deve estar alinhado no centro.
+#   EXERCÍCIO 2
+Faça o `footer` colar na parte de baixo 
+da tela, e o elemento `aside` ficar
+fixado à direita, após o corpo 
+do texto da página.
+
+# Exercício 3
+Centralizar os textos e o botão do 
+elemento `aside`, e fazer com que, 
+enquanto o botão estiver clicado/ativo, 
+os textos e botão do elemento `aside` 
+fiquem com cores invertidas 
+(texto branco com fundo preto, 
+ou o contrário, no caso do botão).
+*/
+*{
+margin: 0;
+padding: 0;
+box-sizing:border-box;
+}
 header{
     border-bottom: 1px solid black;
+    text-align: center;
+    margin-bottom: 1px;
   }
-  
+  .corpo-do-texto{
+    margin-left: 450px;
+  }
+
   main{
-    width: 800px;
+    width: 1200px;
   }
   
   aside{
     width: 180px;
+    height: 240px;
     border: 1px solid black;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+
   }
   
   footer{
     background-color: black;
-    color: white;
-    width: 100%;
+    color: rgb(205, 97, 97);
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
   }
   
   button{
     background-color: black;
     color: white;
     font-family: serif;
+  }
+  aside:active{
+background-color: rgb(54, 54, 179);
+  }
+
+  button:active{
+    background-color: aqua;
   }
